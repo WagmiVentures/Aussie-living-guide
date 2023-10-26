@@ -93,6 +93,6 @@ color: var(--heading-color);
 
 @media (min-width:800px){
     .subjects li{
-        max-width: 20%;
+        max-width: 40%;
     }
 }
