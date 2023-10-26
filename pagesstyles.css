@@ -1,0 +1,100 @@
+:root{
+    --background-color: #264653;
+    --font-color-1:#e9c46a;
+    --background-menu-color:#e76f51;
+    --heading-color:#283618;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffddd2;
+    max-height: 100vh;
+    max-width: 100%;
+
+    background-image: url(/img/paw-print-heart-pattern-background_1017-36754.jpg);
+}
+
+
+.title{
+    margin: 20px auto;
+   
+    text-align: center;
+    color: var(--font-color-1);
+    background-color: var(--background-color);
+    width: 60%;
+    border-radius: 2rem;
+    padding: 5px 0;
+
+   
+}
+
+.notes{
+    background-color: #ffacc7;
+    width: 70%;
+    min-height: 30vh;
+    height: 40%;
+    margin: 10px auto;
+    border-radius: 1rem;
+}
+
+.notes ul{
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+
+.notes li{
+    margin-top: 1vh;
+    padding: 5px 10px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.notes p, .notes h3{
+    padding-right: 10px 5px;
+}
+
+.links{
+background-color: #ffacc7;
+width: 70%;
+min-height: 30vh;
+height: 40%;
+margin: auto;
+margin: 10px auto;
+text-align: center;
+
+border-radius: 1rem;
+}
+
+
+h3{
+
+padding: 3px 0;
+}
+
+.backhome{
+margin: 40px auto;
+text-align: center;
+
+
+}
+
+.backhome a{
+text-decoration: none;
+background-color: #ff8dc7;
+padding: 5px 30px;
+font-size: large;
+font-weight: bold;
+border-radius: 2em;
+}

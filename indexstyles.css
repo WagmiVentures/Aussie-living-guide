@@ -1,0 +1,98 @@
+:root{
+    --background-color: #264653;
+    --font-color-1:#e9c46a;
+    --background-menu-color:#e76f51;
+    --heading-color:#283618;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+.paw-logo{
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    border: 1px solid black;
+
+}
+
+body{
+    background-color: var(--background-color);
+    max-height: 100vh;
+    max-width: 100%;
+    background-image: url(/img/pawbackindex.avif);
+    background-size: cover;
+}
+
+h1{
+text-align: center;
+margin-top: 5px;
+margin-bottom: 3px;
+color: var(--heading-color);
+}
+
+.menu{
+    font-family: monospace;
+    font-size: 1.5em;
+    margin: 8px 0 0 0 ;
+}
+
+.subjects{
+    margin: 50px auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.subjects li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+   padding-left: 50px;
+
+
+    line-height: 2em;
+    list-style-type: none;
+    background-color: var(--background-menu-color);
+    margin: 10px 0;
+    width: 70%;
+    height: 20%;
+    max-width: 100%;
+    font-weight: bolder;
+    font-size: larger;
+    text-align: center;
+    border-radius: 2rem;
+    font-family: monospace;
+    
+}
+
+.subjects a:hover{
+    background-color: var(--background-color);
+    color: #ffb9b9;
+    position: relative;
+    left: 5px;
+    top: -5px;
+    padding: 0 5px;
+
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+.subjects a{
+    text-decoration: none;
+    color: black;
+    max-width: 100%;
+    padding-left: 20px;
+}
+
+@media (min-width:800px){
+    .subjects li{
+        max-width: 20%;
+    }
+}
