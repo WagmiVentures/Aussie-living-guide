@@ -17,6 +17,8 @@
     border-radius: 50%;
     border: 1px solid black;
 
+    margin: 3px 1px;
+
 }
 
 body{
@@ -60,7 +62,7 @@ color: var(--heading-color);
     line-height: 2em;
     list-style-type: none;
     background-color: var(--background-menu-color);
-    margin: 10px 0;
+    margin: 15px 0;
     width: 70%;
     height: 20%;
     max-width: 100%;
@@ -91,8 +93,8 @@ color: var(--heading-color);
     padding-left: 20px;
 }
 
-@media (min-width:800px){
+@media (min-width: 1000px){
     .subjects li{
-        max-width: 40%;
+        max-width: 30%;
     }
 }
