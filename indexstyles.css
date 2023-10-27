@@ -98,3 +98,10 @@ color: var(--heading-color);
         max-width: 30%;
     }
 }
+
+
+@media (max-width: 412px){
+    .subjects li{
+        max-width: 90%;
+    }
+}
