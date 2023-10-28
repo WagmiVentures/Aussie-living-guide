@@ -95,14 +95,14 @@ color: var(--heading-color);
     font-weight: bold;
 }
 
-@media (min-width: 1000px){
+@media (min-width: 800px){
     .subjects li{
         max-width: 30%;
     }
 }
 
 
-@media (max-width: 500px){
+@media (max-width: 412px){
     .subjects li{
         max-width: 90%;
     }
@@ -110,4 +110,6 @@ color: var(--heading-color);
     .subjects a{
         font-size: 500;
     }
+
+   
 }
