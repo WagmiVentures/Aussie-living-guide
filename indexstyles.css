@@ -108,8 +108,8 @@ color: var(--heading-color);
     }
 
     .subjects a{
-        font-size: 500;
+        font-size: 5vh;
+        font-weight: larger;
     }
 
-   
 }
