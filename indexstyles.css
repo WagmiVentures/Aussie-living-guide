@@ -102,8 +102,12 @@ color: var(--heading-color);
 }
 
 
-@media (max-width: 412px){
+@media (max-width: 500px){
     .subjects li{
         max-width: 90%;
+    }
+
+    .subjects a{
+        font-size: 500;
     }
 }
