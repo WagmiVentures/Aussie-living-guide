@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tax Matters</title>
     <link rel="stylesheet" href="styles/pagesstyles.css">
+    
+    
 </head>
 <body>
+    <div class="header"></div>
     <div class="title">
-        <h1>Tax</h1>
+        
         <p>nothing is certain, except for tax</p>
     </div>
     
@@ -67,5 +70,15 @@
 <a href="index.html">Home</a>
     </div>
     </div>
+
+    
+   
+    <script type="module">
+        const pageTopic = "Australian Tax Office"
+
+        import {renderPageHeader} from './scripts/header.js';
+        
+        renderPageHeader(pageTopic);
+    </script>
 </body>
 </html>
