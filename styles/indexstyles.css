@@ -146,6 +146,11 @@ body{
         column-gap: 80px;
         row-gap: 50px;
         
+        
+    }
+
+    .menu{
+        margin-top: 250px;
     }
 }
 
