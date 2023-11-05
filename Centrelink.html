@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centrelink</title>
     <link rel="stylesheet" href="styles/pagesstyles.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
+    <div class="header"></div>
     <div class="title">
         <h1>Centrelink</h1>
     </div>
@@ -27,5 +29,18 @@
 <a href="index.html">Home</a>
     </div>
     </div>
+
+    <div class="footer"></div>
+    <script type="module">
+        const pageTopic = "CentreLink - Government Assistance"
+
+        import {renderPageHeader} from './scripts/header.js';
+        
+        import {renderPageFooter} from './scripts/footer.js'
+        
+        renderPageHeader(pageTopic);
+
+        renderPageFooter();
+    </script>
 </body>
 </html>

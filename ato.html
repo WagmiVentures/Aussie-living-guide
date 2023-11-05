@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tax Matters</title>
     <link rel="stylesheet" href="styles/pagesstyles.css">
-    
+    <link rel="stylesheet" href="styles/footer.css">
     
 </head>
 <body>
@@ -67,10 +67,11 @@
     </div>
 
     <div class="backhome">
-<a href="index.html">Home</a>
+    <a href="index.html">Home</a>
     </div>
     </div>
 
+    <div class="footer"></div>
     
    
     <script type="module">
@@ -78,7 +79,11 @@
 
         import {renderPageHeader} from './scripts/header.js';
         
+        import {renderPageFooter} from './scripts/footer.js'
+        
         renderPageHeader(pageTopic);
+
+        renderPageFooter();
     </script>
 </body>
 </html>

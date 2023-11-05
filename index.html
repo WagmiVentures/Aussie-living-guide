@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A simple living guide for Alicia</title>
    <link rel="stylesheet" href="styles/indexstyles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>An Australian Living Guide </h1>
+    <div class="header"></div>
+
     <div class="menu">
         <ul class="subjects">
             <li><img src="img/pawlogo.avif" alt="" class="paw-logo"><a href="safety.html">Safety</a></li>
@@ -21,5 +27,21 @@
             <li><img src="img/catlogo9.webp" alt="" class="paw-logo"><a href="vote.html">Civil Duty (AEC)</a></li>
         </ul>
     </div>
+
+    <div class="footer"></div>
+
+    <script type="module">
+        const pageTopic = "An Australian Living Guide"
+
+        import {renderPageHeader} from './scripts/header.js';
+
+        import {renderPageFooter} from './scripts/footer.js'
+        
+        renderPageHeader(pageTopic);
+
+        renderPageFooter();
+
+
+    </script>
 </body>
 </html>

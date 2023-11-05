@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Civil Duty</title>
     <link rel="stylesheet" href="styles/pagesstyles.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    
 </head>
 <body>
+    <div class="header"></div>
     <div class="title">
         <h1>Civil Duty</h1>
         <p>your responsibility and rights ... in this democracy</p>
@@ -31,5 +34,20 @@
 <a href="index.html">Home</a>
     </div>
     </div>
+
+    <div class="footer"></div>
+    
+   
+    <script type="module">
+        const pageTopic = "Your Civil Duty"
+
+        import {renderPageHeader} from './scripts/header.js';
+        
+        import {renderPageFooter} from './scripts/footer.js'
+        
+        renderPageHeader(pageTopic);
+
+        renderPageFooter();
+    </script>
 </body>
 </html>
