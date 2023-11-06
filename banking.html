@@ -47,6 +47,15 @@
         renderPageHeader(pageTopic);
 
         renderPageFooter();
+
+        //render notes
+        import{renderPageNotes} from './scripts/pagenotes.js';
+        import { pageData } from "./scripts/pagedata.js";
+
+        
+
+        let pageName = "Banking";
+        renderPageNotes(pageName,pageData);
     </script>
 </body>
 </html>

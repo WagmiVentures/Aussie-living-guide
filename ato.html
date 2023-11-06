@@ -16,46 +16,7 @@
     </div>
     
     <div class="notes">
-       <ul>
-        <li>
-            <h3>Financial year</h3>
-            <p>Australian financial starts on 1 July and ends on 30 June the following calendar year</p><br>
-            <p>You usually have till 30 October to file your tax return. </p>
-        </li>
-        <li>
-            <h3>Payslip</h3>
-            <p>
-                If your are employed, part-time, full-time, contract, 
-                your employer must provide you with payslips on each pay.
-            </p><br>
-            <p>
-                These days, most employer submit your pay data to ATO electronicall. However, 
-                it is always a good idea to keep copies of your payslips. 
-                One common use of these payslips will be when you apply for a mortgage, 
-                your bank will ask for the most recent payslips.
-            </p>
-        </li>
-        <li>
-            <h3>Where to lodge tax return</h3>
-            <p>
-                The most convenient portal to do this is to register an account with
-                 <span><a href="https://my.gov.au/">myGov</a></span>. Once registered, 
-                 you can add ATO as a linked service. Then you will be able to view your account
-                 details, all the tax lodgements, etc from there.
-            </p>
-        </li>
-        <li>
-            <h3>Deductions</h3>
-            <p>If you do some contract work, commissions, etc, remember to keep copies all the money
-                you have spent for the purpose of doing that work. This could be travel expenses, meals,
-                tools, stationaries, just to name a few. <br>
-                You will be able to claim some deductions when you lodge your tax return. This will reduce
-                the tax you pay. Also keep good logbook of your mileage of driving between work sites 
-                (date, from, to and KMs), as well as the hours you work from home. <br>
-                The tax rule regarding this is a bit complex. So consult me or mon when you do your first tax return. 
-            </p>
-        </li>
-       </ul>
+       
     </div>
     
     <div class="links">
@@ -84,6 +45,16 @@
         renderPageHeader(pageTopic);
 
         renderPageFooter();
+
+
+        //render notes
+        import{renderPageNotes} from './scripts/pagenotes.js';
+        import { pageData } from "./scripts/pagedata.js";
+
+        
+
+        let pageName = "ATO";
+        renderPageNotes(pageName,pageData);
     </script>
 </body>
 </html>
