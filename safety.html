@@ -15,33 +15,7 @@
     </div>
     
     <div class="notes">
-       <ul>
-        <li>
-            <h3>Police</h3>
-            <p>
-                <strong>000</strong> - This the number to call when there is emergency. 
-                Don't be shy.
-            </p>            
-        </li>
-        <li>
-            <h3>Campus security</h3>
-            <p>
-                First thing when you settle down at the campus is 
-                to get the number of your campus security team. They usually offer 
-                security escort service, especially after dark. If you have class at night, ask for
-                their help. Again, don't be shy. 
-            </p>
-        </li>
-        <li>
-            <h3>Know your surroundings</h3>
-            <p>
-                During orientation, ask which streets/areas are to be avoided. Call campus security to ask
-                similar questions. Check with locals as well. <br>
-                Always use well-lit streets with more crowd. Try get someone else to walk with you after
-                dark. And Take Off yor earpieces!
-            </p>
-        </li>
-       </ul>
+       
     </div>
     
     <div class="links">
@@ -66,6 +40,13 @@
         renderPageHeader(pageTopic);
 
         renderPageFooter();
+
+        //render notes
+        import{renderPageNotes} from './scripts/pagenotes.js';
+        import { pageData } from "./scripts/pagedata.js";
+
+        let pageName = "Safety";
+        renderPageNotes(pageName,pageData);
     </script>
 </body>
 </html>

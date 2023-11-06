@@ -13,7 +13,7 @@ export function renderPageNotes(pageName, dataFile) {
     page.pageContents.forEach((note) => {
       //console.log(note.contentHeading + note.contentParas);
       pageHTML +=
-        `<h3>${note.contentHeading}</h3>` + `<p>${note.contentParas}</p>`;
+        `<h3>${note.contentHeading}</h3>` + `<div>${note.contentParas}</div>`;
     });
   });
 
