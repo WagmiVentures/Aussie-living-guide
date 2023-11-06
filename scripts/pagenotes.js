@@ -3,17 +3,15 @@
 export function renderPageNotes(pageName, dataFile) {
   let pageHTML = ``;
   const pageToRender = dataFile.filter((item) => item.pageName === pageName);
-  console.log(pageToRender);
-
-  console.log(pageToRender[0].pageContents[1]);
 
   pageToRender.forEach((page) => {
-    // console.log(page.pageContents);
-
     page.pageContents.forEach((note) => {
-      //console.log(note.contentHeading + note.contentParas);
-      pageHTML +=
-        `<h3>${note.contentHeading}</h3>` + `<div>${note.contentParas}</div>`;
+      let paraHTML = "";
+      note.contentParas.forEach((para) => {
+        paraHTML += `<p>${para}</p>`;
+      });
+
+      pageHTML += `<h3>${note.contentHeading}</h3>` + paraHTML;
     });
   });
 
