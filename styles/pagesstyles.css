@@ -13,12 +13,14 @@
 
 body{
     background-color: #ffddd2;
-    max-height: 100vh;
+   
     max-width: 100%;
 
     background-image: url(../img/subpageback.jpg);
    
     background-size: cover;
+
+    padding-bottom: 50px;
 }
 
 .header{
@@ -124,4 +126,9 @@ padding: 5px 30px;
 font-size: large;
 font-weight: bold;
 border-radius: 2em;
+}
+
+.backhome a:hover{
+    background-color: #283618;
+    color: #ff8dc7;
 }
