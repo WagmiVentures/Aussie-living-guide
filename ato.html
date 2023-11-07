@@ -22,8 +22,7 @@
     <div class="links">
         <h3>Some useful links</h3>
         <div class="useful-links">
-            <a href="https://www.ato.gov.au/Individuals/Your-tax-return/" target="_blank">ATO - Preparing your tax return</a>
-            
+         <ul class="js-useful-links"></ul>               
         </div>
     </div>
 
@@ -47,14 +46,14 @@
         renderPageFooter();
 
 
-        //render notes
+        //render notes and links
         import{renderPageNotes} from './scripts/pagenotes.js';
+        import{renderUsefulLinks} from './scripts/pagelinks.js';
         import { pageData } from "./scripts/pagedata.js";
-
-        
 
         let pageName = "ATO";
         renderPageNotes(pageName,pageData);
+        renderUsefulLinks(pageName,pageData);
     </script>
 </body>
 </html>

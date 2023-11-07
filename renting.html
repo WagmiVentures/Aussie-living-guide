@@ -20,10 +20,7 @@
     
     <div class="links">
         <h3>Some useful links</h3>
-        <ul>
-            <li><a href="wwww.domain.com.au">Domain</a></li>
-            <li><a href="www.realestate.com.au">Realestate.com.au</a></li>
-        </ul>
+        <ul class="js-useful-links"></ul>  
     </div>
 
     <div class="backhome">
@@ -47,10 +44,14 @@
 
         //render notes
         import{renderPageNotes} from './scripts/pagenotes.js';
+        import{renderUsefulLinks} from './scripts/pagelinks.js';
         import { pageData } from "./scripts/pagedata.js";
+
+        
 
         let pageName = "Renting";
         renderPageNotes(pageName,pageData);
+        renderUsefulLinks(pageName,pageData);
     </script>
 </body>
 </html>
