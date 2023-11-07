@@ -47,6 +47,15 @@
         renderPageHeader(pageTopic);
 
         renderPageFooter();
+
+        //render notes and links
+        import{renderPageNotes} from './scripts/pagenotes.js';
+        import{renderUsefulLinks} from './scripts/pagelinks.js';
+        import { pageData } from "./scripts/pagedata.js";
+
+        let pageName = "Driving";
+        renderPageNotes(pageName,pageData);
+        renderUsefulLinks(pageName,pageData);
     </script>
 </body>
 </html>

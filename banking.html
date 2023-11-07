@@ -15,12 +15,7 @@
     </div>
     
     <div class="notes">
-       <ul>
-        <li>Day to day account for living expense</li>
-        <li>Large item spending account</li>
-        <li>Income account</li>
-        <li>Saving and Investment account</li>
-       </ul>
+        <ul class="js-useful-links"></ul>  
     </div>
     
     <div class="links">
@@ -50,12 +45,14 @@
 
         //render notes
         import{renderPageNotes} from './scripts/pagenotes.js';
+        import{renderUsefulLinks} from './scripts/pagelinks.js';
         import { pageData } from "./scripts/pagedata.js";
 
         
 
         let pageName = "Banking";
         renderPageNotes(pageName,pageData);
+        renderUsefulLinks(pageName,pageData);
     </script>
 </body>
 </html>

@@ -20,6 +20,7 @@
     
     <div class="links">
         <h3>Some useful links</h3>
+        <ul class="js-useful-links"></ul>
     </div>
 
     <div class="backhome">
@@ -41,12 +42,14 @@
 
         renderPageFooter();
 
-        //render notes
-        import{renderPageNotes} from './scripts/pagenotes.js';
+         //render notes and links
+         import{renderPageNotes} from './scripts/pagenotes.js';
+        import{renderUsefulLinks} from './scripts/pagelinks.js';
         import { pageData } from "./scripts/pagedata.js";
 
         let pageName = "Safety";
         renderPageNotes(pageName,pageData);
+        renderUsefulLinks(pageName,pageData);
     </script>
 </body>
 </html>
