@@ -82,12 +82,12 @@ export const pageData = [
     contentLinks: [
       {
         description: `Find a place - Domain`,
-        contentURL: `www.domain.com.au`,
+        contentURL: `https://www.domain.com.au/`,
       },
 
       {
         description: `Find a place - Realestate.com.au`,
-        contentURL: `www.realestate.com.au`,
+        contentURL: `https://www.realestate.com.au/`,
       },
     ],
   },
