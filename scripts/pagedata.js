@@ -146,20 +146,63 @@ export const pageData = [
     pageName: "Banking",
     pageContents: [
       {
-        contentHeading: "Banking - tbd",
-        contentParas: [`tbd`, `tbd`, `tbd`],
+        contentHeading: "Banking products",
+        contentParas: [
+          `Banks offer many financial services/products.
+        The most basic services you will use day-to-day are transaction accoutns and 
+        savings accounts. Savings accounts pay interest on your balances; transactions
+        accounts does not pay interest. Some transacton accoutns even charge 
+        monthly fees.`,
+        ],
+      },
+
+      {
+        contentHeading: "Managing your bank accounts",
+        contentParas: [
+          `The best pratice for managing your bank accounts is to have 
+          some separation. I would recommend you to use at least two banks, 
+          one savings account and three transaction accounts.`,
+          `One transaction account should be used to receive your salary
+          or any other income. One transaction account is for your normal
+           spending: grocery, bills, etc. The third transaction account is 
+           for your online shopping, etc. Keep your salary receiving account
+           and spending accunts with different banks, if possible. Keep your 
+           money in the savings account. Only transfer enough money to the 
+           spending accounts to cover bills/expenses monthly/fortnightly.`,
+          `This arrangement will give you maximum protection on your privacy 
+           and against rampant cyber scams.`,
+        ],
+      },
+
+      {
+        contentHeading: "Mortgage accounts",
+        contentParas: [
+          `You are going to have mortgage accounts when you are buying your
+          first property. This is a more complex products with many features.
+          We will talk about that when you plan to buy your first home.`,
+        ],
       },
     ],
 
     contentLinks: [
       {
-        description: ``,
-        contentURL: ``,
+        description: `Commonwealth Bank`,
+        contentURL: `https://www.commbank.com.au/`,
       },
 
       {
-        description: ``,
-        contentURL: ``,
+        description: `Westpac`,
+        contentURL: `https://www.westpac.com.au/`,
+      },
+
+      {
+        description: `ANZ Bank`,
+        contentURL: `https://www.anz.com.au/personal/`,
+      },
+
+      {
+        description: `NAB`,
+        contentURL: `https://www.nab.com.au/`,
       },
     ],
   },
